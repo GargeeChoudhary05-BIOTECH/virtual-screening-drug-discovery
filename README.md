@@ -1,27 +1,41 @@
-# AI-Driven Virtual Screening for Drug Discovery
+# Computational Biotechnology & AI Portfolio
 
-## 🧬 Project Overview
-Bringing a new drug to market takes over a decade. 
-As a biotechnology student, I want to bridge the gap between wet-lab biological research and computational data science. This repository serves as my hands-on exploration into how Machine Learning can optimize early-stage drug discovery, significantly cutting down the time and high costs traditionally required to find viable drug candidates.
-
-## 📊 Dataset & Target Focus
-* **Target Organism / Disease:** I am focusing this pipeline on screening compounds against specific cancer-related target proteins (e.g., Human EGFR).
-* **Data Sourcing:** Raw bioactivity data, IC50 values, and chemical structures are fetched programmatically from the public [ChEMBL Database](https://ebi.ac.uk).
-* **Languages:** Python (Jupyter Notebooks)
-* **Core Libraries:** 
-  * `RDKit` (Chemical structure manipulation & feature extraction)
-  * `Scikit-Learn` (Machine learning classifiers)
-  * `Pandas` & `NumPy` (Data processing)
-
-## 🛠️ Pipeline Workflow
-1. **Data Ingestion:** Fetching bioactivity data for a specific target protein.
-2. **Data Cleaning:** Filtering missing IC50 values and handling duplicate chemical structures.
-3. **Feature Engineering:** Converting chemical **SMILES strings** into numerical **Morgan Fingerprints** using RDKit.
-4. **Model Training:** Evaluating Random Forest and XGBoost classifiers to separate active compounds from inactive ones.
-
-## 📁 Repository Structure
-* `notebooks/`: Contains step-by-step Jupyter Notebooks for data cleaning and model training.
-* `src/`: Production-ready Python scripts exported for scalable screening pipelines.
+Welcome to my dry-lab research repository. As a biotechnology student, I bridge the gap between molecular biology and computer science. This portfolio contains end-to-end computational pipelines tracking chemical informatics, predictive machine learning, and structural viral genomics.
 
 ---
-Maintained by GARGEE CHOUDHARY (B.Tech Biotechnology student)
+
+## 🔬 Project 1: AI-Driven Virtual Screening for Drug Discovery
+**Directory:** `notebooks/01_virtual_screening_egfr.ipynb`
+
+### 🧬 Project Overview
+Bringing a new drug to market takes over a decade. This project demonstrates how Machine Learning can optimize early-stage drug discovery, significantly cutting down the time and high costs traditionally required to find viable drug candidates against cancer-related proteins.
+
+### 📊 Methodology & Results
+* **Data Sourcing:** Raw bioactivity data and IC50 concentration values were mined programmatically from the public **ChEMBL Database**.
+* **Feature Engineering:** Converted chemical SMILES strings into 2048-bit structural mathematical arrays (**Morgan Fingerprints**) using **RDKit**.
+* **AI Architecture:** Trained a Scikit-Learn **Random Forest Classifier** to distinguish active cancer inhibitors from inactive molecules.
+* **Evaluation Score:** The model achieved an **84.21% Accuracy Score** on unseen clinical test compounds.
+
+---
+
+## 🧬 Project 2: SARS-CoV-2 Computational Genomic Analyzer
+**Directory:** `notebooks/02_genomic_sequence_analysis.ipynb`
+
+### 🦠 Project Overview
+Viral mutations constantly alter structural protein stabilities. This pipeline automates the retrieval, quality mapping, and nitrogenous base analysis of viral genomes directly from federal repositories to evaluate molecular heat thresholds.
+
+### 📊 Methodology & Results
+* **Data Sourcing:** Automated a live server handshake to pull the complete reference genome of the original SARS-CoV-2 strain from the **NCBI GenBank** database using **Biopython**.
+* **Sequence Metrics:** Parsed a raw text FASTA sequence measuring **29,903 biological letters long**.
+* **Analytics Matrix:** Calculated the exact frequency distribution of Adenine, Thymine, Guanine, and Cytosine using **Pandas**.
+* **Biotech Insight:** Discovered an **Overall GC-Content of 37.97%**. Because AT bonds share fewer hydrogen links than GC bonds, this low percentage computationally explains the virus's structural fragility under heat and soap.
+
+---
+
+## 🛠️ Tech Stack Summary
+* **Languages:** Python (Jupyter Notebooks)
+* **Domain Libraries:** RDKit, Biopython
+* **Data & Core ML:** Pandas, NumPy, Scikit-Learn, Matplotlib
+
+---
+*Maintained by Gargee Choudhary (B.Tech Biotechnology student)*
